@@ -1,0 +1,11 @@
+.vscode/
+.settings/
+__pycache__/
+/config.yaml
+/data
+/plugins/*
+!/plugins/__init__.py
+/venv
+*.py[cod]
+Pipfile
+Pipfile.lock
