@@ -32,7 +32,7 @@ class DiscordClient(discord.Client):
         if not row:
             return
 
-        text = '<%s> %s' % (message.author.nick, discord.utils.remove_markdown(message.clean_content))
+        text = '<%s> %s' % (message.author.display_name, discord.utils.remove_markdown(message.clean_content))
         self.plugin.bot.privmsg(row[0], text)
 
 
